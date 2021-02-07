@@ -1,0 +1,15 @@
+﻿@model IList<examen.Models.User>
+
+@{
+    ViewData["Title"] = "Users List";
+}
+
+<div class="h3 pl-3 mt-2 mb-2">Liste des Utilisateurs</div>
+
+<ul>
+
+    @foreach (var user in Model) {
+        <li>@user.Id | @user.Name</li>
+    }
+
+</ul>
